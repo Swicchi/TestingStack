@@ -43,7 +43,7 @@ public class TestStack  {
 		assertEquals(2,result);
 	}
 	@Test
-	public void addSixAndSevenStackPopShouldReturnSeven(){
+	public void addSixAndSevenStackPopShouldReturnSeven()throws InvalidActionException{
 		Stack stack= new Stack ();
 		
 		stack.Push(6);
@@ -53,7 +53,7 @@ public class TestStack  {
 		assertEquals(7,result);
 	}
 	@Test
-	public void addEightAndNineStackPopShouldReturnNineandEight(){
+	public void addEightAndNineStackPopShouldReturnNineandEight()throws InvalidActionException{
 		Stack stack= new Stack ();
 		
 		stack.Push(8);
@@ -63,6 +63,13 @@ public class TestStack  {
 		assertEquals(9,result);
 		result= stack.Pop();
 		assertEquals(8,result);
+	}
+	@Test(expected = InvalidActionException.class)
+	public void PopinEmptyStackShouldThrowAnException() throws Exception{
+		Stack stack= new Stack ();
+		Object result;
+		result= stack.Pop();
+		
 	}
 	
 }

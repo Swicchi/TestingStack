@@ -21,10 +21,13 @@ public class Stack {
 		// TODO Auto-generated method stub
 		return this.topOfStack+1;
 	}
-	public Object Pop() {
+	public Object Pop() throws InvalidActionException {
 		// TODO Auto-generated method stub
-		
+		if(!this.IsEmpty()){
 		return this.theStack[this.topOfStack--];
+		}else{
+			return new InvalidActionException();
+		}
 	}
     
 }

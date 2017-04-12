@@ -13,5 +13,9 @@ public class Stack {
     public boolean IsEmpty(){
     	return this.topOfStack==-1;
     }
+    public void Push(Object obj ){
+    	this.topOfStack++;
+    	this.theStack[this.topOfStack]=obj;
+    }
     
 }

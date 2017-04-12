@@ -13,4 +13,23 @@ public class TestStack  {
 		boolean result= stack.IsEmpty();
 		assertTrue(result);
 	}
+	@Test
+	public void addThreeStackNotEmpty(){
+		Stack stack= new Stack ();
+		
+		stack.Push(3);
+		
+		boolean result= stack.IsEmpty();
+		assertEquals(false,result);
+	}
+	@Test
+	public void addOneAndTwoStackNotEmpty(){
+		Stack stack= new Stack ();
+		
+		stack.Push(1);
+		stack.Push(2);
+		
+		boolean result= stack.IsEmpty();
+		assertEquals(false,result);
+	}
 }

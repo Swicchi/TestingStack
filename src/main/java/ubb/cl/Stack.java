@@ -21,5 +21,9 @@ public class Stack {
 		// TODO Auto-generated method stub
 		return this.topOfStack+1;
 	}
+	public Object Pop() {
+		// TODO Auto-generated method stub
+		return this.theStack[this.topOfStack];
+	}
     
 }

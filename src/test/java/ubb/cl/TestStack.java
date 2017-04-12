@@ -42,4 +42,14 @@ public class TestStack  {
 		int result= stack.Size();
 		assertEquals(2,result);
 	}
+	@Test
+	public void addSixAndSevenStackPopShouldReturnSeven(){
+		Stack stack= new Stack ();
+		
+		stack.Push(6);
+		stack.Push(7);
+		
+		Object result= stack.Pop();
+		assertEquals(7,result);
+	}
 }

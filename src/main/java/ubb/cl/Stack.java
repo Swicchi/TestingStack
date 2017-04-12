@@ -17,5 +17,9 @@ public class Stack {
     	this.topOfStack++;
     	this.theStack[this.topOfStack]=obj;
     }
+	public int Size() {
+		// TODO Auto-generated method stub
+		return this.topOfStack+1;
+	}
     
 }

@@ -32,4 +32,14 @@ public class TestStack  {
 		boolean result= stack.IsEmpty();
 		assertEquals(false,result);
 	}
+	@Test
+	public void addFiveAndFourStackSizeShouldByTwo(){
+		Stack stack= new Stack ();
+		
+		stack.Push(4);
+		stack.Push(5);
+		
+		int result= stack.Size();
+		assertEquals(2,result);
+	}
 }

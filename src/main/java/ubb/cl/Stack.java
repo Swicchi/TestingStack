@@ -23,7 +23,8 @@ public class Stack {
 	}
 	public Object Pop() {
 		// TODO Auto-generated method stub
-		return this.theStack[this.topOfStack];
+		
+		return this.theStack[this.topOfStack--];
 	}
     
 }

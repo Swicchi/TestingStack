@@ -52,4 +52,17 @@ public class TestStack  {
 		Object result= stack.Pop();
 		assertEquals(7,result);
 	}
+	@Test
+	public void addEightAndNineStackPopShouldReturnNineandEight(){
+		Stack stack= new Stack ();
+		
+		stack.Push(8);
+		stack.Push(9);
+		
+		Object result= stack.Pop();
+		assertEquals(9,result);
+		result= stack.Pop();
+		assertEquals(8,result);
+	}
+	
 }
